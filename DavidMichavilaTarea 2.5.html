@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pedir online pizza</title>
+        <meta name="description" content="Un formulario para mandar una pizza">
+        <meta name="author" content="David Michavila Yan">
+    </head>
+    <body>
+        <form action="mailto:telepizza@gmail.com">
+        <table align="center" border="20" bordercolor="#7E1600" bgcolor="#FFC176">
+            <tr>
+                <th colspan="3" with="100%" bgcolor="orange"><b><i>- Pedido de Pizza -</i></b></th>
+            </tr>
+            <tr>
+                <th bgcolor="red"><font color="white">Nombre</font></th>
+                <th colspan="2" bgcolor="white"><input type="text" size="50" maxlength="50"></th>
+            </tr>
+            <tr>
+                <th bgcolor="red"><font color="white">Dirección</font></th>
+                <th colspan="2" bgcolor="white"><input type="text" size="50" maxlength="50"></th>
+            </tr>
+            <tr>
+                <th bgcolor="red"><font color="white">Ingredientes</font></th>
+                <th bgcolor="red"><font color="white">Tamaño</font></th>
+                <th bgcolor="red"><font color="white">Forma de pago</font></th>
+            </tr>
+            <tr>
+                <th><input align="left" type="checkbox" name="ingredientes">Queso</th>
+                <th><input align="left" type="radio" cheked name="tamaño" value="P">Pequeña</th>
+                <th><select name="pago" size="1">
+                    <option value="pago1">Visa</option>
+                    <option value="pago2">Cheque</option>
+                    <option value="pago3">Contado</option>
+                    <option value="pago4">Metálico</option>
+                    </select></th>
+            </tr>
+            <tr>
+                <th><input align="left" type="checkbox" name="ingredientes">Pimiento</th>
+                <th><input align="left" type="radio" cheked name="tamaño" value="m">Mediana</th>
+            </tr>
+            <tr>
+                <th><input align="left" type="checkbox" name="ingredientes">Cebolla</th>
+                <th><input align="left" type="radio" cheked name="tamaño" value="g">Grande</th>
+            </tr>
+            <th colspan="3" with="100%" bgcolor="red"><b><font color="white">Instrucciones Especiales</font></b></th>
+            <tr>
+            <th colspan="3"> <textarea name="comentario" rows="5" cols="50"></textarea><br>
+                <input align="center" type="submit" value="Enviar pedido">
+                <input align="center" type="reset" value="Borrar formulario"></th>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
